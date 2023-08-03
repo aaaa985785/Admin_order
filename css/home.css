@@ -1,0 +1,465 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*css Reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*rwd img Reset*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*全域border box*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*微軟字體*/
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background: #000000;
+  height: 70px;
+}
+
+.navbar {
+  width: 90vw;
+  height: 80px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 18% 78% 5%;
+  align-items: center;
+  /* border: 1px solid white; */
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav {
+  font-size: 16px;
+  display: flex;
+  /* border: 1px solid white; */
+  gap: 30px;
+}
+.navbar .nav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 20px 15px;
+  /* border: 1px solid white; */
+}
+
+.navbar .admin {
+  font-size: 16px;
+}
+
+.navbar .click {
+  border-bottom: 4px solid white;
+}
+
+.content .title {
+  width: 90vw;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .title h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content .title .scope {
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+.content .title .scope .svg {
+  transform: rotate(-90deg);
+}
+
+.content .date {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.content .date select {
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #9b9b9b;
+}
+
+.data {
+  /* border: 1px solid black; */
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.data h2 {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.data .number {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+.data .revenue {
+  /* border: 1px solid black; */
+  width: 32%;
+  height: 10em;
+  padding-top: 3%;
+  background-color: white;
+  box-shadow: 0 0 10px 5px #ebebeb;
+  border-radius: 3px;
+}
+
+.data .revenue svg {
+  width: 26px;
+  height: 25px;
+}
+.data .revenue .number {
+  color: #7ed321;
+}
+
+.data .cost {
+  /* border: 1px solid black; */
+  width: 32%;
+  height: 10em;
+  padding-top: 3%;
+  background-color: white;
+  box-shadow: 0 0 10px 5px #ebebeb;
+  border-radius: 3px;
+}
+
+.data .cost svg {
+  width: 28px;
+  height: 25px;
+}
+
+.data .cost .number {
+  color: #d0021b;
+}
+
+.data .income {
+  /* border: 1px solid black; */
+  width: 32%;
+  height: 10em;
+  padding-top: 3%;
+  background-color: white;
+  box-shadow: 0 0 10px 5px #ebebeb;
+  border-radius: 3px;
+}
+
+.data .income svg {
+  width: 30px;
+  height: 20px;
+}
+
+.data .income .number {
+  color: #4a90e2;
+}
+
+.chart {
+  margin: 0 auto;
+  margin-top: 18px;
+  padding: 30px 40px;
+  width: 90vw;
+  height: 430px;
+  /* border: 1px solid black; */
+  background-color: white;
+  box-shadow: 0 0 10px 5px #ebebeb;
+  border-radius: 3px;
+}
+
+.chart .category {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.twoblocks {
+  margin: 0 auto;
+  width: 90vw;
+  margin-top: 16px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.twoblocks .transaction {
+  /* border: 1px solid black; */
+  width: 49%;
+  padding: 30px 40px 0 40px;
+  background-color: white;
+  box-shadow: 0 0 10px 5px #ebebeb;
+  border-radius: 3px;
+}
+
+.twoblocks .transaction h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.twoblocks .transaction .list {
+  display: flex;
+  /* border: 1px solid black; */
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.twoblocks .transaction .list svg {
+  width: 45px;
+  height: 45px;
+}
+
+.twoblocks .transaction .list .web {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #9b9b9b;
+  gap: 20px;
+}
+
+.twoblocks .transaction .list .value {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.twoblocks .transaction .list .value svg {
+  width: 17.9px;
+  height: 18px;
+  fill: #7ed321;
+}
+
+.twoblocks .transaction .list .value .arrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #7ed321;
+  font-size: 16px;
+}
+
+.twoblocks .latest {
+  /* border: 1px solid black; */
+  width: 49%;
+  padding: 30px 40px 0 40px;
+  background-color: white;
+  box-shadow: 0 0 10px 5px #ebebeb;
+  border-radius: 3px;
+}
+
+.twoblocks .latest h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.twoblocks .latest .order {
+  display: grid;
+  grid-template-columns: 22% 72% 5%;
+  padding: 8px 0;
+  align-items: center;
+}
+.twoblocks .latest .order img {
+  width: 100px;
+  height: 100px;
+}
+
+.twoblocks .latest .order .productName h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.twoblocks .latest .order .productName .dates {
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-bottom: 8px;
+}
+
+.twoblocks .latest .order .productName .dates svg {
+  width: 10px;
+  height: 10px;
+  fill: #9b9b9b;
+}
+
+.twoblocks .latest .order .productName .name {
+  font-size: 16px;
+  color: #9b9b9b;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.twoblocks .latest .order .productName .name svg {
+  width: 10px;
+  height: 18px;
+  fill: #9b9b9b;
+}
+
+.twoblocks .latest .order .price {
+  display: grid;
+  gap: 10px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.twoblocks .latest .order .num {
+  font-size: 20px;
+  font-weight: bold;
+}

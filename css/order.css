@@ -1,0 +1,139 @@
+.select {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.select select {
+  border: none;
+  background: none;
+}
+
+.wrap {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  width: 90vw;
+}
+
+th,
+td {
+  color: #404060;
+  padding: 10px;
+}
+
+th:nth-child(2) {
+  text-align: left;
+}
+
+td:nth-child(2) {
+  text-align: left;
+  /* border: 1px solid black; */
+}
+
+td:nth-child(3) {
+  text-align: center;
+}
+
+th:nth-child(4) {
+  text-align: left;
+}
+
+th:nth-child(5) {
+  text-align: left;
+}
+
+th:nth-child(6) {
+  text-align: left;
+}
+
+th:nth-child(7) {
+  text-align: left;
+}
+
+th {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+
+/* td {
+} */
+
+tbody tr {
+  background-color: #f0f0f0;
+}
+
+tbody tr:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.plist {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.plist .name {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.plist .price {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.paid {
+  background: #7ed321;
+  border: 1px solid #7ed321;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
