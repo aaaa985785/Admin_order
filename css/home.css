@@ -463,3 +463,26 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
+
+/*箭頭下*/
+.twoblocks .transaction .list .value .arrow .mwt_border .arrow_b_int {
+  width: 0px;
+  height: 0px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  position: absolute;
+  bottom: -30px;
+  right: 50px;
+}
+/*箭頭下-邊框*/
+.twoblocks .transaction .list .value .arrow .mwt_border .arrow_b_out {
+  width: 0px;
+  height: 0px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  bottom: -29px;
+  right: 50px;
+}
